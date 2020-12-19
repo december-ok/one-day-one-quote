@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Architects Daughter', cursive;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#root{
+    height: 100%;
+}
+
+.App{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba( 255, 255, 255, 0.5 );
+}
+
+video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.content, .loading{
+    width: 350px;
+    margin: 0 auto;
+    padding-top: 35vh;
+}
+.loading{
+    animation: tracking-out-contract 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    text-align: center;
+}
+
+.text,.author{
+    font-size: 25px;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both, shake-vertical 15s cubic-bezier(0.455, 0.030, 0.515, 0.955) 1s infinite both;
+}
+.author{
+    text-align: right;
+    font-size: 20px;
+}
+
+.reload{
+    float: right;
+    margin-top: 20%;
+    font-size: 15px;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both, shake-lr 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+
+@keyframes text-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+}
+  
+
+@keyframes shake-vertical {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      transform: translateY(-3px);
+    }
+    20%,
+    40%,
+    60% {
+      transform: translateY(3px);
+    }
+    80% {
+      transform: translateY(2.8px);
+    }
+    90% {
+      transform: translateY(-2.8px);
+    }
+}
+  
+@keyframes shake-lr {
+    0%,
+    20% {
+      transform: rotate(0deg);
+      transform-origin: 50% 50%;
+    }
+    2% {
+      transform: rotate(8deg);
+    }
+    4%,
+    8%,
+    12% {
+      transform: rotate(-10deg);
+    }
+    6%,
+    10%,
+    14% {
+      transform: rotate(10deg);
+    }
+    16% {
+      transform: rotate(-8deg);
+    }
+    18% {
+      transform: rotate(8deg);
+    }
+  }
+
+  @keyframes tracking-out-contract {
+    0%{
+        opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+  }
+  
