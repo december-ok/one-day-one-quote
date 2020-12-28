@@ -4,6 +4,7 @@ import './App.css'
 
 function App() {
   const [loaded, setLoaded] = useState(false)
+  const [reload, setReload] = useState(false)
   const [content, setContent] = useState({
     index: 0,
     author: '',
@@ -12,15 +13,21 @@ function App() {
   })
 
   useEffect(()=>{
-    setTimeout(()=>{setLoaded(true)},1200)
-
+    setTimeout(()=>{
+      setLoaded(true)
+    },1200)
+    setTimeout(()=>{
+      setLoaded(false)
+      setReload(!reload)
+    },1000*60)
+  
     axios.get('https://kqfptz21zb.execute-api.ap-northeast-2.amazonaws.com/test')
     .then(
       (response)=>{
         setContent(response.data)
       }
     )
-  },[])
+  },[reload])
 
   if(loaded){
     return(
