@@ -33,10 +33,28 @@ video{
     object-fit: cover;
 }
 
-.content, .loading{
-    width: 350px;
-    margin: 0 auto;
+@media screen and (max-width:700px){
+  .content, .loading{
+      width: 350px;
+      margin: 0 auto;
+  }
 }
+
+@media screen and (min-width:700px) and (max-width:1024px){
+  .content, .loading{
+      width: 600px;
+      margin: 0 auto;
+  }
+}
+
+@media screen and (min-width:1025px){
+  .content, .loading{
+      width: 700px;
+      margin: 0 auto;
+  }
+}
+
+
 .loading{
     animation: tracking-out-contract 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     text-align: center;
