@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/one-day-one-quote/static/css/main.1be17bcb.chunk.css",
+    "main.css": "/one-day-one-quote/static/css/main.dac12d62.chunk.css",
     "main.js": "/one-day-one-quote/static/js/main.d5e5baa2.chunk.js",
     "main.js.map": "/one-day-one-quote/static/js/main.d5e5baa2.chunk.js.map",
     "runtime-main.js": "/one-day-one-quote/static/js/runtime-main.d0bc9fef.js",
@@ -8,13 +8,13 @@
     "static/js/2.7e0fed59.chunk.js": "/one-day-one-quote/static/js/2.7e0fed59.chunk.js",
     "static/js/2.7e0fed59.chunk.js.map": "/one-day-one-quote/static/js/2.7e0fed59.chunk.js.map",
     "index.html": "/one-day-one-quote/index.html",
-    "static/css/main.1be17bcb.chunk.css.map": "/one-day-one-quote/static/css/main.1be17bcb.chunk.css.map",
+    "static/css/main.dac12d62.chunk.css.map": "/one-day-one-quote/static/css/main.dac12d62.chunk.css.map",
     "static/js/2.7e0fed59.chunk.js.LICENSE.txt": "/one-day-one-quote/static/js/2.7e0fed59.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d0bc9fef.js",
     "static/js/2.7e0fed59.chunk.js",
-    "static/css/main.1be17bcb.chunk.css",
+    "static/css/main.dac12d62.chunk.css",
     "static/js/main.d5e5baa2.chunk.js"
   ]
 }
